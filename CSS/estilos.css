@@ -1,9 +1,8 @@
 :root{
     --primario: #30888E;
-    --primarioClaro: #83E1E7 ;
-    --secundarioClaro: #E7CF64 ;
-    --secundarioOscuro: RGB
-    231, 185, 100  ;
+    --primarioClaro: #6ec4ca ;
+    --secundarioClaro: #dfc34a ;
+    --secundarioOscuro: RGB (231, 185, 100 );
     --blanco: #FFF;
     --negro: #000;
     --fuentePrincipal: font-family: 'Golos Text', sans-serif;
@@ -55,3 +54,62 @@ h3{
     font-size: 2.4rem;
 }
 /* /* globales arriba */
+
+/* header abajo */
+.header{
+    display: flex;
+    justify-content: center;
+}
+.header__logo{
+    margin: 3rem 0;
+}
+/* navegacion abajo */
+.navegacion{
+    background-color: var(--primarioClaro);
+    padding: 1rem 0;
+    display: flex;
+    justify-content: center;
+    gap: 2rem;  /*espacio entre elementos no soportado por todos */
+}
+.navegacion__enlace{
+    font-family: var(--fuentePrincipal);
+    color: var(--blanco);
+    font-size: 3rem;
+    margin-right: 2rem; /*espacio entre elementos sin gap*/
+}
+.navegacion__enlace:last-of-type{ /*elimina el espacio de nosotros que desentra el nav*/
+    margin-right: 0;
+}
+.navegacion__enlace--activo,
+.navegacion__enlace:hover{
+    color: var(--secundarioClaro);
+
+}
+/* footer abajo */
+.footer{
+    background-color: var(--primarioClaro);
+    padding: 1rem 0;
+    margin-top: 2rem;
+}
+.footer__text{
+    font-size: var(--fuentePrincipal);
+    text-align: center;
+    font-size: 2.2rem;
+}
+/**productos abajo **/
+.producto{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 2rem;
+    margin-top: 2rem;
+}
+.producto__imagen{
+}
+.producto__informacion{
+}
+.producto__nombre{
+
+}
+.producto__precio{
+
+}
